@@ -1,0 +1,43 @@
+#################################_Pier_Luigi_Manfrini_#################################
+
+
+	In addition to <solution04.c> and the executable <solution04>
+	more executables (with respective srcs) are provided in order
+	to better handle and manage the outcomes of solution04.
+
+	In particular it is suggested to do the following:
+
+	--------> generate a txt with random floats using:
+			./generate_txt_floats 
+		(if no argument provided the default txt name is "floats.txt")
+
+	--------> generate a binary float file out of floats.txt using:
+			./generate_data_floats floats.txt
+		(the output binary file will be created as "data_floats")
+
+	--------> MANAGE the floats written in binary with:
+			./read_data_floats <arg1>
+		(where arg1 is the binary file you want to read)
+
+
+	However the Usage of every single executable is explained in the
+	header comment of each source file!
+
+	Since the programs are so modular to use, the examples of 
+	files converted from txt to binary and viceversa are not provided, it
+	would have been confusing.	
+
+	TXT to BINARY:
+		./solution04 floats.txt <output> -b
+
+	BINARY to TXT:
+		./solution04 dala_floats <output> -t
+		
+
+	NOTE: 
+	--------> init.sh script provided:
+		     |
+		     |---> removes all executables except itself
+		     |---> compiles all .c files
+
+	
