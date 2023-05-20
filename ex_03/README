@@ -1,0 +1,42 @@
+#######################################_Pier_Luigi_Manfrini_#######################################
+
+
+	In addition to solution03_txt.c and solution03_dat.c
+	more programs are provided in order to better handle and visualize 
+	the files produced by and required from the 2 solution executable
+
+
+	In particular it is suggested to edit the "numbers" file with 
+	a text editor of your choice then use:
+
+	-> <generate_dat_numbers> <numbers> to generate a numbers.dat file
+
+	-> <read_dataintegers> <numbers.dat> to visualize to STDERR the number inside numbers.dat
+
+	Notes: 
+		- in addition also a simple init.sh bash script is provided.
+			-> running the script remove all the executables (except itself)
+				and compile again all *.c regular files
+
+	REPORT THE DIFFERENCES OF THE FILES CREATED WITH THE TO METHODS:
+
+		- TXT: reading a txt-formatted is easily feasible for humans.
+			The file produced will occupy in memory one byte 
+			(or whatever size is assigned to char in the running machine)
+			for every digit of the numbers in it. Of course we "waste" also
+			one byte for every formatting input like '\n', '\t', '\r' etc...
+
+		- BIN: reading a binary file requires some sort of previous knowledge of
+			it. For instance we need to know how to parse it in input:
+			which kind of datatype is contained in it? 
+			Of course it is not humanly readable.
+			In this specific example we occupy more memory on disk when saving
+			the numbers in binary mode rather than in textual mode since for
+			each number we provide 4 bytes (no matter how many digit we need
+			to represent it of course). 
+			Naturally, if we wished for some fancier formatting even the textual
+			file could easily grew in size (memory occupied).
+			Last, binary files could be safer to use if managing sensible data
+			(privacy)
+
+
