@@ -1,0 +1,20 @@
+#################################_Pier_Luigi_Manfrini_###############################
+
+
+	This exercise has turned into a little fun project for me so it is 
+	slightly different than required since extra features has been added
+	with the goal to emulate a professional shell more and more.
+	
+	To keep it simple, everything has been mantained organized only into
+	2 files (shell.c and shell.h) leaving the .c as clean as possible.
+
+	The shell's characteristics are described withing the source file
+	shell.c.
+	However there are still present some minor issues that up to today I did
+	not have the time to fix:
+		- When displaying dynamical outputs produced by programs
+			like TOP or HTOP after some refreshes the output looses
+			unexpectedly its proper formatting
+		- Right after failures due to dynamical outputs the commands may be
+			not properly received.
+
