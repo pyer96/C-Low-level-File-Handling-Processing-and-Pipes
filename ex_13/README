@@ -1,0 +1,17 @@
+#################################_Pier_Luigi_Manfrini_#################################
+
+
+	- 3to5_alphanumeric_SAMPLETXT is a demonstrative file containing
+	all password combinantions ranging from 3-letters-long to 
+	5-letters-long out of the alphanumeric dictionary (a-zA-Z0-9).
+	It was produced by a single worker so that the order of the passwords
+	is preserved and smoothly increasing without any interleaving
+	that happens when multiple processes write into the same file.
+	Since it took quite long to produce the file it is left here with the only
+	purpose of being a simple demonstrative reference.
+
+	- This solution is satisfying both the requirements from exercise 13 and
+	exercise 14 since it produces both a file containing all the required 
+	password combinations (whos filename can be choosen at will) and a file
+	(whos filename can't be changed by the user) showing the ranges assigned 
+	to each worker so that the user can check how the work has been distributed
